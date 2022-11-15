@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="/CSS/Form1Style.css" rel="stylesheet">
+</head>
+<body>
+    <h1 id="heading">Personal Information</h1>
+    <hr style="margin-inline: 50px;" >
+    <form id="form1">
+
+        <div class="row">
+          <h1 id="head1">Name</h1>
+
+          <div class="col">
+            <input type="text" class="form-control" placeholder="First name">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Last name">
+          </div>
+        </div>
+
+        <div class="row" style="margin-top:20px;">
+          
+
+          <div class="col">
+            <h1 id="head1">Email</h1>
+            <input type="text" class="form-control" placeholder="example@example">
+          </div>
+          <div class="col">
+            <h1 id="head1">Phone</h1>
+
+            <input type="text" class="form-control" placeholder="+00 0000 0000">
+          </div>
+        </div>
+        
+        <div class="row" style="margin-top:20px;">
+          <h1 id="head1">Social</h1>
+
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Linked In">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Twitter">
+          </div>
+          
+        </div>
+
+        <div class="row" style="margin-top:20px;">
+
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Facebook">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Instagram">
+          </div>
+          
+        </div>
+        <div class="row" style="margin-top:20px;">
+
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Github">
+        </div>
+        </div>
+        <div class="row" style="margin-top:20px;margin-inline: 60px;">
+
+          <input 
+          type='button' 
+          id='submitbutton' 
+          value='Submit' 
+          class="btn btn-primary"
+          onclick='clicka();console.log("you used it in HTML")'>
+ 
+</div>
+      </form>
+      
+</body>
+<script>
+
+
+function clicka(){
+   window.location.href = '/HTML/Form2.html';
+}
+</script>
+</html>
