@@ -13,47 +13,19 @@
     <hr style="margin-inline: 50px;">
     <form id="form1">
 
-        <div class="row">
-          <h1 id="head1">Skills</h1>
-
-          <div class="col">
-            <input type="text" class="form-control" placeholder="skill 1">
-          </div>
-          <div class="col">
-            <input type="text" class="form-control" placeholder="Skill 2">
-          </div>
-          <div class="col">
-            <input type="text" class="form-control" placeholder="skill 3">
-          </div>
-          
-        </div>
-
-
-        <div class="row" style="margin-top:20px;">
-          
-
-          <div class="col">
-            <input type="text" class="form-control" placeholder="skill 4">
-          </div>
-          <div class="col">
-            <input type="text" class="form-control" placeholder="Skill 5">
-          </div>
-          <div class="col">
-            <input type="text" class="form-control" placeholder="skill 6">
-          </div>
-        </div>
+        
 
         <div class="row">
-            <h1 id="head1" style="margin-top: 50px;">Interest</h1>
+            <h1 id="head1" style="margin-top: 50px;">Technical Skill</h1>
   
             <div class="col">
-              <input type="text" class="form-control" placeholder="Interest 1">
+              <input type="text" class="form-control" id="s1" placeholder="Ex. Java">
             </div>
             <div class="col">
-              <input type="text" class="form-control" placeholder="Interest 2">
+              <input type="text" id="s2" class="form-control" placeholder="Ex. CPP">
             </div>
             <div class="col">
-              <input type="text" class="form-control" placeholder="Interest 3">
+              <input type="text" id="s3" class="form-control" placeholder="Ex. Android">
             </div>
             
           </div>
@@ -63,16 +35,47 @@
             
   
             <div class="col">
-              <input type="text" class="form-control" placeholder="Interest 4">
+              <input type="text" id="s4" class="form-control" placeholder="">
             </div>
             <div class="col">
-              <input type="text" class="form-control" placeholder="Interest 5">
+              <input type="text" id="s5" class="form-control" placeholder="">
             </div>
             <div class="col">
-              <input type="text" class="form-control" placeholder="Interest 6">
+              <input type="text" id="s6" class="form-control" placeholder="">
             </div>
           </div>
         
+
+          <div class="row">
+            <h1 id="head1">Interest</h1>
+  
+            <div class="col">
+              <input type="text" class="form-control" id="i1" placeholder="Interest 1">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" id="i2" placeholder="Interest 2">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" id="i3" placeholder="Interest 3">
+            </div>
+            
+          </div>
+  
+  
+          <div class="row" style="margin-top:20px;">
+            
+  
+            <div class="col">
+              <input type="text" class="form-control" id="i4" placeholder="Interest 4">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" id="i5" placeholder="Interest 5">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" id="i6" placeholder="Interest 6">
+            </div>
+          </div>
+
           <div class="row" style="margin-top:20px;">
 
           <input 
@@ -80,6 +83,7 @@
           id='submitbutton' 
           value='Next' 
           class="btn btn-primary"
+          
           onclick='clicka();console.log("you used it in HTML")'>
         </div>
       </form>
@@ -89,6 +93,22 @@
 
 
 function clicka(){
+
+  window.localStorage.setItem('s1',document.getElementById('s1').value);
+  window.localStorage.setItem('s2',document.getElementById('s2').value);
+  window.localStorage.setItem('s3',document.getElementById('s3').value);
+  window.localStorage.setItem('s4',document.getElementById('s4').value);
+  window.localStorage.setItem('s5',document.getElementById('s5').value);
+  window.localStorage.setItem('s6',document.getElementById('s6').value);
+
+  window.localStorage.setItem('i1',document.getElementById('i1').value);
+  window.localStorage.setItem('i2',document.getElementById('i2').value);
+  window.localStorage.setItem('i3',document.getElementById('i3').value);
+  window.localStorage.setItem('i4',document.getElementById('i4').value);
+  window.localStorage.setItem('i5',document.getElementById('i5').value);
+  window.localStorage.setItem('i6',document.getElementById('i6').value);
+
+
    window.location.href = '/HTML/Resume1.html';
 }
 </script>

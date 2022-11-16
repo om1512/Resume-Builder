@@ -18,7 +18,7 @@
           <h1 id="pro1">Project 1</h1>
 
           <div class="col">
-            <input type="text" class="form-control" placeholder="Project Name">
+            <input type="text" class="form-control" id="p1name" placeholder="Project Name">
           </div>
           
         </div>
@@ -27,14 +27,14 @@
           
 
           <div class="col">
-            <input type="text" class="form-control" placeholder="Project Link">
+            <input type="text" class="form-control" id="p1link" placeholder="Project Link">
           </div>
         
         </div>
         <div class="row" style="margin-top:20px;">
             <div class="col">
 
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Description"></textarea>
+            <textarea class="form-control" id="p1desc" rows="3" placeholder="Description"></textarea>
          </div> 
         </div>
 
@@ -42,7 +42,7 @@
             <h1 id="pro1">Project 2</h1>
   
             <div class="col">
-              <input type="text" class="form-control" placeholder="Project Name">
+              <input type="text" class="form-control" id="p2name" placeholder="Project Name">
             </div>
             
           </div>
@@ -51,14 +51,14 @@
             
   
             <div class="col">
-              <input type="text" class="form-control" placeholder="Project Link">
+              <input type="text" class="form-control" id="p2link" placeholder="Project Link">
             </div>
           
           </div>
           <div class="row" style="margin-top:20px;">
               <div class="col">
   
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Description"></textarea>
+              <textarea class="form-control" id="p2desc" rows="3" placeholder="Description"></textarea>
            </div> 
           </div>
 
@@ -67,7 +67,7 @@
             <h1 id="pro1">Project 3</h1>
   
             <div class="col">
-              <input type="text" class="form-control" placeholder="Project Name">
+              <input type="text" class="form-control" id="p3name" placeholder="Project Name">
             </div>
             
           </div>
@@ -76,14 +76,14 @@
             
   
             <div class="col">
-              <input type="text" class="form-control" placeholder="Project Link">
+              <input type="text" class="form-control" id="p3link" placeholder="Project Link">
             </div>
           
           </div>
           <div class="row" style="margin-top:20px;">
               <div class="col">
   
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Description"></textarea>
+              <textarea class="form-control" id="p3desc" rows="3" placeholder="Description"></textarea>
            </div> 
           </div>
         
@@ -101,6 +101,20 @@
 </body>
 <script>
 function clicka(){
+
+    window.localStorage.setItem('p1name',document.getElementById('p1name').value);
+    window.localStorage.setItem('p1link',document.getElementById('p1link').value);
+    window.localStorage.setItem('p1desc',document.getElementById('p1desc').value);
+
+    window.localStorage.setItem('p2name',document.getElementById('p2name').value);
+    window.localStorage.setItem('p2link',document.getElementById('p2link').value);
+    window.localStorage.setItem('p2desc',document.getElementById('p2desc').value);
+
+    window.localStorage.setItem('p3name',document.getElementById('p3name').value);
+    window.localStorage.setItem('p3link',document.getElementById('p3link').value);
+    window.localStorage.setItem('p3desc',document.getElementById('p3desc').value);
+   
+
    window.location.href = 'Form4.html';
 }
 </script>

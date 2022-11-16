@@ -2,12 +2,13 @@
 <html>
 <head>
 
-	<title>Jonathan Doe | Web Designer, Director | name@yourdomain.com</title>
+	<title></title>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
 
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
 	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.7.0/build/reset-fonts-grids/reset-fonts-grids.css" media="all" /> 
 	<link rel="stylesheet" type="text/css" href="/CSS/resume.css" media="all" />
 
@@ -20,15 +21,15 @@
 		<div id="hd">
 			<div class="yui-gc">
 				<div class="yui-u first">
-					<h1>Jonathan Doe</h1>
-					<h2>Web Designer, Director</h2>
+					<h1 id="rname"></h1>
+					<h2 id="rsubtitle"></h2>
 				</div>
 
 				<div class="yui-u">
 					<div class="contact-info">
 						<h3><a id="pdf" href="#">Download PDF</a></h3>
-						<h3><a href="mailto:name@yourdomain.com">name@yourdomain.com</a></h3>
-						<h3>(313) - 867-5309</h3>
+						<h3 ><a href="" id="remail">name@yourdomain.com</a></h3>
+						<h3 id="rphone">(313) - 867-5309</h3>
 					</div><!--// .contact-info -->
 				</div>
 			</div><!--// .yui-gc -->
@@ -38,7 +39,29 @@
 			<div id="yui-main">
 				<div class="yui-b">
 
-					<div class="yui-gf">
+					
+
+						<div class="yui-gf last">
+							<div class="yui-u first">
+								<h2>Education</h2>
+							</div>
+							<div class="yui-u">
+								<h2>School</h2>
+								<h3 id="sname"></h3>
+								<h3 id="course"></h3>
+								<h3 id="syear"></h3> 
+
+							</div>
+							<div class="yui-u">
+								<h2 style="margin-top:30px;">College</h2>
+								<h3 id="cname"></h3>
+								<h3 id="degree"></h3>
+								<h3 id="cyear"></h3> 
+
+							</div>
+						</div><!--// .yui-gf -->
+						<div class="yui-gf" ></div>
+					<!-- <div class="yui-gf">
 						<div class="yui-u first">
 							<h2>Profile</h2>
 						</div>
@@ -47,16 +70,16 @@
 								Progressively evolve cross-platform ideas before impactful infomediaries. Energistically visualize tactical initiatives before cross-media catalysts for change. 
 							</p>
 						</div>
-					</div><!--// .yui-gf -->
+					</div>// .yui-gf -->
 
 					<div class="yui-gf">
-						<div class="yui-u first">
-							<h2>Skills</h2>
+						<!-- <div class="yui-u first">
+							<h2>Project</h2>
 						</div>
 						<div class="yui-u">
 
 								<div class="talent">
-									<h2>Web Design</h2>
+									<h2>Project 1</h2>
 									<p>Assertively exploit wireless initiatives rather than synergistic core competencies.	</p>
 								</div>
 
@@ -69,8 +92,34 @@
 									<h2>Project Direction</h2>
 									<p>Proven ability to lead and manage a wide variety of design and development projects in team and independent situations.</p>
 								</div>
-						</div>
-					</div><!--// .yui-gf -->
+						</div> -->
+
+						<div class="yui-u first">
+							<h2>Project</h2>
+						</div><!--// .yui-u -->
+
+						<div class="yui-u">
+
+							<div class="job">
+								<h2 id="p1name">Facebook</h2>
+								<h3 ><a id="p1link" href=""></a></h3>
+								<p id="p1desc">Intrinsicly enable optimal core competencies through corporate relationships. Phosfluorescently implement worldwide vortals and client-focused imperatives. Conveniently initiate virtual paradigms and top-line convergence. </p>
+							</div>
+
+							<div class="job">
+								<h2 id="p2name">Facebook</h2>
+								<h3 ><a id="p2link" href=""></a></h3>
+								<p id="p2desc">Intrinsicly enable optimal core competencies through corporate relationships. Phosfluorescently implement worldwide vortals and client-focused imperatives. Conveniently initiate virtual paradigms and top-line convergence. </p>
+							</div>
+
+							<div class="job">
+								<h2 id="p3name">Facebook</h2>
+								<h3 ><a id="p3link" href=""></a></h3>
+								<p id="p3desc">Intrinsicly enable optimal core competencies through corporate relationships. Phosfluorescently implement worldwide vortals and client-focused imperatives. Conveniently initiate virtual paradigms and top-line convergence. </p>
+							</div>
+
+						</div><!--// .yui-u -->
+					</div>
 
 					<div class="yui-gf">
 						<div class="yui-u first">
@@ -78,24 +127,21 @@
 						</div>
 						<div class="yui-u">
 							<ul class="talent">
-								<li>XHTML</li>
-								<li>CSS</li>
-								<li class="last">Javascript</li>
+								<li id="s1">XHTML</li>
+								<li id="s2" class="last">CSS</li>
 							</ul>
 
 							<ul class="talent">
-								<li>Jquery</li>
-								<li>PHP</li>
-								<li class="last">CVS / Subversion</li>
+								<li id="s4">Jquery</li>
+								<li id="s5" class="last">PHP</li>
 							</ul>
 
 							<ul class="talent">
-								<li>OS X</li>
-								<li>Windows XP/Vista</li>
-								<li class="last">Linux</li>
+								<li id="s3">Javascript</li>
+								<li id="s6" class="last">CVS / Subversion</li>
 							</ul>
 						</div>
-					</div><!--// .yui-gf-->
+					</div>
 
 					<div class="yui-gf">
 	
@@ -106,56 +152,74 @@
 						<div class="yui-u">
 
 							<div class="job">
-								<h2>Facebook</h2>
-								<h3>Senior Interface Designer</h3>
-								<h4>2005-2007</h4>
-								<p>Intrinsicly enable optimal core competencies through corporate relationships. Phosfluorescently implement worldwide vortals and client-focused imperatives. Conveniently initiate virtual paradigms and top-line convergence. </p>
+								<h2 id="company">Facebook</h2>
+								<h3 id="link">Senior Interface Designer</h3>
+								<h4 id="duration">2005-2007</h4>
+								<p id="cdesc">Intrinsicly enable optimal core competencies through corporate relationships. Phosfluorescently implement worldwide vortals and client-focused imperatives. Conveniently initiate virtual paradigms and top-line convergence. </p>
 							</div>
 
-							<div class="job">
-								<h2>Apple Inc.</h2>
-								<h3>Senior Interface Designer</h3>
-								<h4>2005-2007</h4>
-								<p>Progressively reconceptualize multifunctional "outside the box" thinking through inexpensive methods of empowerment. Compellingly morph extensive niche markets with mission-critical ideas. Phosfluorescently deliver bricks-and-clicks strategic theme areas rather than scalable benefits. </p>
+							<div class="job" id="exp1">
+								<h2 id="company1"></h2>
+								<h3 id="link1"></h3>
+								<h4 id="duration1"></h4>
+								<p id="cdesc1"></p>
 							</div>
 
-							<div class="job">
-								<h2>Microsoft</h2>
-								<h3>Principal and Creative Lead</h3>
-								<h4>2004-2005</h4>
-								<p>Intrinsicly transform flexible manufactured products without excellent intellectual capital. Energistically evisculate orthogonal architectures through covalent action items. Assertively incentivize sticky platforms without synergistic materials. </p>
-							</div>
-
-
-							<div class="job last">
-								<h2>International Business Machines (IBM)</h2>
-								<h3>Lead Web Designer</h3>
-								<h4>2001-2004</h4>
-								<p>Globally re-engineer cross-media schemas through viral methods of empowerment. Proactively grow long-term high-impact human capital and highly efficient innovation. Intrinsicly iterate excellent e-tailers with timely e-markets.</p>
-							</div>
+							
 
 						</div><!--// .yui-u -->
 					</div><!--// .yui-gf -->
 
 
-					<div class="yui-gf last">
+					<div class="yui-gf">
 						<div class="yui-u first">
-							<h2>Education</h2>
+							<h2>Interest</h2>
 						</div>
 						<div class="yui-u">
-							<h2>Indiana University - Bloomington, Indiana</h2>
-							<h3>Dual Major, Economics and English &mdash; <strong>4.0 GPA</strong> </h3>
+							<ul class="talent">
+								<li id="i1"></li>
+								<li id="i4" class="last"></li>
+							</ul>
+
+							<ul class="talent">
+								<li  id="i2" ></li>
+								<li id="i5" class="last"></li>
+							</ul>
+
+							<ul class="talent">
+								<li id="i3"></li>
+								<li id="i6" class="last"></li>
+							</ul>
 						</div>
-					</div><!--// .yui-gf -->
+					</div>
+
+					<div class="yui-gf">
+						<div class="yui-u first">
+							<h2>Social</h2>
+						</div>
+						<div class="yui-u">
+							<ul class="talent">
+								<li id="ig"></li>
+								<li id="fb" ></li>
+								<li id="gh" class="last"></li>
+							</ul>
+
+							<ul class="talent">
+								<li  id="ln" ></li>
+								<li  id="tw" ></li>
+								<li id="i6" class="last"></li>
+							</ul>
+
+							
+						</div>
+					</div>
 
 
 				</div><!--// .yui-b -->
 			</div><!--// yui-main -->
 		</div><!--// bd -->
 
-		<div id="ft">
-			<p>Jonathan Doe &mdash; <a href="mailto:name@yourdomain.com">name@yourdomain.com</a> &mdash; (313) - 867-5309</p>
-		</div><!--// footer -->
+		
 
 	</div><!-- // inner -->
 
@@ -164,5 +228,149 @@
 
 
 </body>
+
+
+
+
+<script>
+let fname = localStorage.getItem('fname');
+let lname = localStorage.getItem('lname');
+let subtitle = localStorage.getItem('subtile');
+
+let email = localStorage.getItem('email');
+let phone = localStorage.getItem('phone');
+
+let ln = localStorage.getItem('ln');
+let fb = localStorage.getItem('fb');
+let gh = localStorage.getItem('gh');
+let tw = localStorage.getItem('tw');
+let ig = localStorage.getItem('ig');
+
+let college = localStorage.getItem('college');
+let degree = localStorage.getItem('degree');
+let cyear = localStorage.getItem('cyear');
+
+let sname = localStorage.getItem('student');
+let syear = localStorage.getItem('syear');
+let course = localStorage.getItem('course');
+
+let p1name = localStorage.getItem('p1name');
+let p1link = localStorage.getItem('p1link');
+let p1desc = localStorage.getItem('p1desc');
+
+let p2name = localStorage.getItem('p2name');
+let p2link = localStorage.getItem('p2link');
+let p2desc = localStorage.getItem('p2desc');
+
+let p3name = localStorage.getItem('p3name');
+let p3link = localStorage.getItem('p3link');
+let p3desc = localStorage.getItem('p3desc');
+
+let s1 = localStorage.getItem('s1');
+let s2 = localStorage.getItem('s2');
+let s3 = localStorage.getItem('s3');
+let s4 = localStorage.getItem('s4');
+let s5 = localStorage.getItem('s5');
+let s6 = localStorage.getItem('s6');
+
+let i1 = localStorage.getItem('i1');
+let i2 = localStorage.getItem('i2');
+let i3 = localStorage.getItem('i3');
+let i4 = localStorage.getItem('i4');
+let i5 = localStorage.getItem('i5');
+let i6 = localStorage.getItem('i6');
+
+let company = localStorage.getItem('company');
+let duration = localStorage.getItem('duration');
+let cdesc = localStorage.getItem('cdesc');
+let position  = localStorage.getItem('position');
+
+
+let company1 = localStorage.getItem('company1');
+let duration1 = localStorage.getItem('duration1');
+let cdesc1 = localStorage.getItem('cdesc1');
+let position1  = localStorage.getItem('position1');
+
+document.getElementById("rname").innerHTML = fname +" "+ lname;
+document.getElementById("rsubtitle").innerHTML = subtitle;
+
+document.getElementById("remail").innerHTML = email;
+document.getElementById("remail").href = "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to="+email;
+
+document.getElementById("rphone").innerHTML = phone;
+
+document.getElementById("sname").innerHTML = "name : "+sname;
+document.getElementById("course").innerHTML = "standard : "+course;
+document.getElementById("syear").innerHTML = "passing year : "+syear;
+
+document.getElementById("cname").innerHTML = "name : "+college;
+document.getElementById("degree").innerHTML = "degree : "+degree;
+document.getElementById("cyear").innerHTML = "duration : "+cyear;
+
+
+
+document.getElementById("p1name").innerHTML = p1name;
+document.getElementById("p1link").innerHTML = p1link;
+document.getElementById("p1link").href = p1link;
+document.getElementById("p1desc").innerHTML = p1desc;
+
+document.getElementById("p2name").innerHTML = p2name;
+document.getElementById("p2link").innerHTML = p2link;
+document.getElementById("p2link").href = p2link;
+document.getElementById("p2desc").innerHTML = p2desc;
+
+document.getElementById("p3name").innerHTML = p3name;
+document.getElementById("p3link").innerHTML = p3link;
+document.getElementById("p3link").href = p3link;
+document.getElementById("p3desc").innerHTML = p3desc;
+
+
+document.getElementById("s1").innerHTML = s1;
+document.getElementById("s2").innerHTML = s2;
+document.getElementById("s3").innerHTML = s3;
+document.getElementById("s4").innerHTML = s4;
+document.getElementById("s5").innerHTML = s5;
+document.getElementById("s6").innerHTML = s6;
+
+
+document.getElementById("i1").innerHTML = i1;
+document.getElementById("i2").innerHTML = i2;
+document.getElementById("i3").innerHTML = i3;
+document.getElementById("i4").innerHTML = i4;
+document.getElementById("i5").innerHTML = i5;
+document.getElementById("i6").innerHTML = i6;	
+
+document.getElementById("tw").innerHTML = "<i class='fa fa-twitter'></i>   "+tw;
+document.getElementById("ig").innerHTML = "<i class='fa fa-instagram'></i>   "+ig;
+document.getElementById("fb").innerHTML = "<i class='fa fa-facebook'></i>   "+fb;
+document.getElementById("gh").innerHTML = "<i class='fa fa-github'></i>   "+gh;
+document.getElementById("ln").innerHTML = "<i class='fa fa-linkedin'></i>   "+ln;
+	
+
+document.getElementById("company").innerHTML = company;
+document.getElementById("link").innerHTML = position;
+document.getElementById("duration").innerHTML = duration;
+document.getElementById("cdesc").innerHTML = cdesc;
+
+
+
+
+if(company1.length != 0 && cdesc1.length !=0){
+	document.getElementById("company1").innerHTML = company1;
+	document.getElementById("link1").innerHTML = position1;
+	document.getElementById("duration1").innerHTML = duration1;
+	document.getElementById("cdesc1").innerHTML = cdesc1;
+}
+
+let btn = document.getElementById('pdf');
+let division = document.getElementById('doc2');
+
+
+
+btn.addEventListener('click',function(){
+	window.print(division);
+});
+
+</script>
 </html>
 

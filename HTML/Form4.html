@@ -18,9 +18,8 @@
 
         <div class="row" style="margin-top:20px;">
           
-
           <div class="col">
-            <input type="text" class="form-control" placeholder="Organization / Company">
+            <input type="text" class="form-control" id="company" placeholder="Organization / Company">
           </div>
         
         </div>
@@ -29,7 +28,7 @@
           
 
             <div class="col">
-              <input type="text" class="form-control" placeholder="Position">
+              <input type="text" class="form-control" id="position" placeholder="Position">
             </div>
           
           </div>
@@ -37,14 +36,55 @@
           
 
             <div class="col">
-              <input type="text" class="form-control" placeholder="Duration">
+              <input type="text" class="form-control" id="duration" placeholder="Duration">
             </div>
           
           </div>
         <div class="row" style="margin-top:20px;">
             <div class="col">
 
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Description"></textarea>
+            <textarea class="form-control" id="cdesc"  rows="3" placeholder="Description"></textarea>
+         </div> 
+        </div>
+
+
+        <div class="row" style="margin-top:80px;">
+          <div class="col">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="Other">
+              <label class="form-check-label" for="flexCheckIndeterminate">
+                Other Expirence
+              </label>
+            </div>          </div>
+        </div>
+        <div class="row" style="margin-top:0px;">
+          
+          <div class="col">
+            <input type="text" class="form-control" id="company1" placeholder="Organization / Company">
+          </div>
+        
+        </div>
+
+        <div class="row" style="margin-top:20px;">
+          
+
+            <div class="col">
+              <input type="text" class="form-control" id="position1" placeholder="Position">
+            </div>
+          
+          </div>
+          <div class="row" style="margin-top:20px;">
+          
+
+            <div class="col">
+              <input type="text" class="form-control" id="duration1" placeholder="Duration">
+            </div>
+          
+          </div>
+        <div class="row" style="margin-top:20px;">
+            <div class="col">
+
+            <textarea class="form-control" id="cdesc1"  rows="3" placeholder="Description"></textarea>
          </div> 
         </div>
 
@@ -63,8 +103,42 @@
       
 </body>
 <script>
+
+let chack = document.getElementById("Other");
+  document.getElementById('position1').disabled = true;
+    document.getElementById('company1').disabled = true;
+    document.getElementById('cdesc1').disabled = true;
+    document.getElementById('duration1').disabled = true;
+chack.addEventListener('click', (event) => {
+  if(!chack.checked){
+    document.getElementById('position1').disabled = true;
+    document.getElementById('company1').disabled = true;
+    document.getElementById('cdesc1').disabled = true;
+    document.getElementById('duration1').disabled = true;
+  }else{
+    document.getElementById('position1').disabled = false;
+    document.getElementById('company1').disabled = false;
+    document.getElementById('cdesc1').disabled = false;
+    document.getElementById('duration1').disabled = false;
+  }       
+});  
+ 
 function clicka(){
-   window.location.href = 'Form5.html';
+  window.localStorage.setItem('company',document.getElementById('company').value);
+  window.localStorage.setItem('position',document.getElementById('position').value);
+  window.localStorage.setItem('duration',document.getElementById('duration').value);
+  window.localStorage.setItem('cdesc',document.getElementById('cdesc').value);
+
+  let chack = document.getElementById("Other");
+  
+  window.localStorage.setItem('company1',document.getElementById('company1').value);
+  window.localStorage.setItem('position1',document.getElementById('position1').value);
+  window.localStorage.setItem('duration1',document.getElementById('duration1').value);
+  window.localStorage.setItem('cdesc1',document.getElementById('cdesc1').value);
+
+  
+
+  window.location.href = 'Form5.html';
 }
 </script>
 </html>

@@ -17,11 +17,20 @@
           <h1 id="head1">Name</h1>
 
           <div class="col">
-            <input type="text" class="form-control" placeholder="First name">
+            <input type="text" class="form-control" id="fname" placeholder="First name">
           </div>
           <div class="col">
-            <input type="text" class="form-control" placeholder="Last name">
+            <input type="text" class="form-control" id="lname" placeholder="Last name">
           </div>
+        </div>
+
+        <div class="row" style="margin-top: 20px;">
+          <h1 id="head1">Sub Title</h1>
+
+          <div class="col">
+            <input type="text" class="form-control" id="subtitle" placeholder="Ex. Software Engineer / Senior Web Devloper">
+          </div>
+          
         </div>
 
         <div class="row" style="margin-top:20px;">
@@ -29,12 +38,12 @@
 
           <div class="col">
             <h1 id="head1">Email</h1>
-            <input type="text" class="form-control" placeholder="example@example">
+            <input type="text" class="form-control" id="email" placeholder="example@example">
           </div>
           <div class="col">
             <h1 id="head1">Phone</h1>
 
-            <input type="text" class="form-control" placeholder="+00 0000 0000">
+            <input type="text" class="form-control" id="phone" placeholder="+00 0000 0000">
           </div>
         </div>
         
@@ -42,10 +51,10 @@
           <h1 id="head1">Social</h1>
 
           <div class="col">
-            <input type="text" class="form-control" placeholder="Linked In">
+            <input type="text" class="form-control" id="ln" placeholder="Linked In">
           </div>
           <div class="col">
-            <input type="text" class="form-control" placeholder="Twitter">
+            <input type="text" class="form-control" id="tw" placeholder="Twitter">
           </div>
           
         </div>
@@ -53,17 +62,17 @@
         <div class="row" style="margin-top:20px;">
 
           <div class="col">
-            <input type="text" class="form-control" placeholder="Facebook">
+            <input type="text" class="form-control" id="fb" placeholder="Facebook">
           </div>
           <div class="col">
-            <input type="text" class="form-control" placeholder="Instagram">
+            <input type="text" class="form-control" id="ig" placeholder="Instagram">
           </div>
           
         </div>
         <div class="row" style="margin-top:20px;">
 
         <div class="col">
-          <input type="text" class="form-control" placeholder="Github">
+          <input type="text" class="form-control" id="gh" placeholder="Github">
         </div>
         </div>
         <div class="row" style="margin-top:20px;margin-inline: 60px;">
@@ -71,7 +80,7 @@
           <input 
           type='button' 
           id='submitbutton' 
-          value='Submit' 
+          value='Next' 
           class="btn btn-primary"
           onclick='clicka();console.log("you used it in HTML")'>
  
@@ -81,9 +90,24 @@
 </body>
 <script>
 
-
 function clicka(){
-   window.location.href = '/HTML/Form2.html';
-}
+    window.localStorage.setItem('fname',document.getElementById('fname').value);
+    window.localStorage.setItem('lname',document.getElementById('lname').value);
+    window.localStorage.setItem('subtile',document.getElementById('subtitle').value);
+    window.localStorage.setItem('email',document.getElementById('email').value);
+    window.localStorage.setItem('phone',document.getElementById('phone').value);
+
+    window.localStorage.setItem('ln',document.getElementById('ln').value);
+    window.localStorage.setItem('fb',document.getElementById('fb').value);
+    window.localStorage.setItem('tw',document.getElementById('tw').value);
+    window.localStorage.setItem('ig',document.getElementById('ig').value);
+    window.localStorage.setItem('gh',document.getElementById('gh').value);
+
+
+
+
+    window.location.href = '/HTML/Form2.html';
+ }
+
 </script>
 </html>

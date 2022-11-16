@@ -18,7 +18,7 @@
           <h1 id="head1">College Information</h1>
 
           <div class="col">
-            <input type="text" class="form-control" placeholder="College / University Name">
+            <input type="text" class="form-control" id="college" placeholder="College / University Name">
           </div>
           
         </div>
@@ -27,11 +27,11 @@
           
 
           <div class="col">
-            <input type="text" class="form-control" placeholder="Degree / Course">
+            <input type="text" class="form-control" id="degree" placeholder="Degree / Course">
           </div>
           <div class="col">
 
-            <input type="text" class="form-control" placeholder="Passing Year">
+            <input type="text" class="form-control" id="cyear" placeholder="Passing Year">
           </div>
         </div>
         
@@ -39,7 +39,7 @@
             <h1 id="head1">School Information</h1>
   
             <div class="col">
-              <input type="text" class="form-control" placeholder="School Name">
+              <input type="text" class="form-control" id="school" placeholder="School Name">
             </div>
             
           </div>
@@ -48,11 +48,11 @@
             
   
             <div class="col">
-              <input type="text" class="form-control" placeholder="Course / Standard">
+              <input type="text" class="form-control" id="course" placeholder="Course / Standard">
             </div>
             <div class="col">
   
-              <input type="text" class="form-control" placeholder="Passing Year">
+              <input type="text" class="form-control" id="syear" placeholder="Passing Year">
             </div>
           </div>
         <div class="row" style="margin-top:20px;margin-inline: 60px;">
@@ -68,7 +68,18 @@
 </body>
 <script>
 function clicka(){
-   window.location.href = 'Form3.html';
+
+    window.localStorage.setItem('college',document.getElementById('college').value);
+    window.localStorage.setItem('degree',document.getElementById('degree').value);
+    window.localStorage.setItem('cyear',document.getElementById('cyear').value);
+   
+
+    window.localStorage.setItem('student',document.getElementById('school').value);
+    window.localStorage.setItem('course',document.getElementById('course').value);
+    window.localStorage.setItem('syear',document.getElementById('syear').value);
+   
+
+    window.location.href = '/HTML/Form3.html';
 }
 </script>
 </html>
